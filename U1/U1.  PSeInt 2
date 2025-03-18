@@ -1,0 +1,21 @@
+Algoritmo calcular_el_area
+	escribir"introducir el radio del circulo"
+	leer R
+	escribir "introducir la hipotenusa del triangulo"
+	leer H
+	
+	
+	area_circulo<- (R*R)*3.1416/4
+	Mostrar area_circulo
+	altura=rc((h*h)-(R)^2)
+	Mostrar altura
+	area_circulo_chico<-(((R/2)^2) * 3.1416)/2
+	Mostrar area_circulo_chico
+	area_triangulo<- (2*R)*altura/2
+	Mostrar area_triangulo
+	
+	escribir "Area : " area_circulo+area_triangulo-area_circulo_chico
+	
+	
+	
+FinAlgoritmo
