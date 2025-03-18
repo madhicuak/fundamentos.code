@@ -1,0 +1,44 @@
+Algoritmo calificaionesprimaria 
+	escribir"ingresa el nombre del alumno: "
+	leer nombre
+	escribir "ingresa materias" 
+	leer nmaterias
+	
+	para i <-1 hasta nmaterias hacer 
+		escribir "materia: " , i ":" 
+		escribir "calificaiones: "
+		leer calificaciones 
+		promedio = promedio + calificaciones 
+	FinPara
+	promedio =promedio /nmaterias
+	
+	
+	escribir "reporte de alumno"
+	si promedio == 10 entonces 
+		escribir "alumno destacado"
+		escribir "el alumno " , nombre ," destacado con promedio de: ",  promedio 
+	sino 
+		si promedio <6 entonces 
+			escribir "necesitaras recursamiento"
+			escribir "el alumno " , nombre ," reprobado con promedio de: ",  promedio 
+		sino 
+			escribir "el alumno " , nombre ," aprobado con promedio de: ",  promedio    
+			
+		FinSi
+	finsi 
+
+//resultado del codigo ejecutado 
+** Ejecución Iniciada. ***
+ingresa el nombre del alumno:
+> luis
+ingresa materias
+> 2
+materia: 1:
+calificaiones:
+> 90
+materia: 2:
+calificaiones:
+> 80
+reporte de alumno
+el alumno luis aprobado con promedio de: 85
+*** Ejecución Finalizada. ***
