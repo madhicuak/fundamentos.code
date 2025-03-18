@@ -1,0 +1,40 @@
+Algoritmo prospectocredito 
+	escribir "ingrese su edad: "
+	leer edad 
+	escribir "ingrese sus años trabajados: "
+	leer años 
+	escribir "ingrese ingresos en pesos: "
+	leer ingreso
+	
+	si edad >60 y años >20 y ingresos >20000 entonces 
+		escribir "su credito sera en en el rango $50,000 pesos a $100,000 pesos"
+		
+	sino
+		si edad >35 y años >10 y ingresos >10000 entonces 
+			escribir "su credito sera en el rango de $25,000 pesos a $30,000"
+			
+		sino 
+			si edad >18 y años>5 y ingreso>5000 entonces 
+				escribir "su credito sera en el rango de $10,000 pesos a $15,000"
+				
+			sino 
+				escribir "contactar con un asesor"
+			FinSi
+				
+			
+		fin si
+	FinSi 
+		
+	 
+FinAlgoritmo
+
+//resultado del codigo 
+*** Ejecución Iniciada. ***
+ingrese su edad:
+> 19
+ingrese sus años trabajados:
+> 12
+ingrese ingresos en pesos:
+> 20000
+su credito sera en el rango de $10,000 pesos a $15,000
+*** Ejecución Finalizada. ***
