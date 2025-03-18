@@ -1,0 +1,57 @@
+Algoritmo prestamo_banco
+	definir edad como entero 
+	definir salario como real 
+	definir ahorro como real
+	definir tiempo_trabajdo como entero 
+	definir condicion_medica como logica 
+	
+	
+	escribir "ingrese su edad: " 
+	leer edad 
+	
+	escribir "ingreso de sus salarios: "
+	leer salario
+	
+	escribir "escribe el tiempo que usted a trabajado: " 
+	leer tiempo_trabajado 
+	
+	escribir " ingresa sus ahorros: " 
+	leer ahorros
+	
+	escribir " usted tiene una condicion medica? (1=si , 0=no):"  
+	leer condicion_medica
+	
+	seleccionado = (edad >= 18 y salario >= 4000 y tiempo_trabajando >= 2) o (ahorro >= 10000 )  o  (condicion_medica) 
+	prestamo=(salario* .15) * 12  
+	
+	escribir "" 	
+	escribir "años en edad: " edad 
+	escribir "salario mensual estable: " salario 
+	escribir " monto maximo a prestar: " prestamo 
+	escribir "usted a sido seleccionado para el prestamo?: " seleccionado 
+	
+	
+	
+	
+	
+	
+FinAlgoritmo
+
+//resultados del codigo 
+*** Ejecución Iniciada. ***
+ingrese su edad:
+> 20
+ingreso de sus salarios:
+> 30000
+escribe el tiempo que usted a trabajado:
+> 13
+ ingresa sus ahorros:
+> 100000
+ usted tiene una condicion medica? (1=si , 0=no):
+> 1
+
+años en edad: 20
+salario mensual estable: 30000
+ monto maximo a prestar: 54000
+usted a sido seleccionado para el prestamo?: VERDADERO
+*** Ejecución Finalizada. ***
