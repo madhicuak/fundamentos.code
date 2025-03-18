@@ -1,0 +1,56 @@
+Algoritmo coversionbytes
+		
+		
+		//  medidas 
+		kilo <- 1024
+		mega <- 1048576
+		giga <- 1073741824
+		tera <- 1099511627776
+		peta <- 1125899906842624
+		
+		Escribir "Ingrese los bytes que desea medir: " 
+		Leer bytes   
+		
+		// Determinar la unidad correcta
+		si bytes < kilo Entonces
+			unidad = "bytes"
+			val = bytes
+			Mostrar val
+		Finsi 
+		
+		Si bytes >= kilo y bytes < mega Entonces
+			unidad = "KB"
+			val <- bytes / kilo
+			
+		Finsi
+		
+		Si bytes >= mega y bytes < giga Entonces
+			unidad = "MB"
+			val = bytes / mega
+			Mostrar val
+		Finsi
+		Si bytes >= giga y bytes < tera Entonces
+			unidad = "GB"
+			val = bytes / giga
+			Mostrar val
+		Finsi
+		Si bytes >= tera y bytes < peta Entonces
+			unidad = "TB"
+			val = bytes / tera
+		FinSi
+		Si bytes >= peta Entonces
+			unidad = "PB"
+			val = bytes / peta
+		Fin Si
+		
+		Escribir "Medición sugerida: ", val, " ", unidad
+		
+
+FinAlgoritmo
+
+//resultado del codigo 
+*** Ejecución Iniciada. ***
+Ingrese los bytes que desea medir:
+> 20000
+Medición sugerida: 19.53125 KB
+*** Ejecución Finalizada. ***
