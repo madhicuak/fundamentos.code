@@ -1,0 +1,52 @@
+Algoritmo promedio_alumno
+	escribir "ingresar su nombre"
+	leer nombre
+	
+	escribir "edad"
+	leer edad 
+	
+	escribir "ingresa su calificacion de examen"
+	leer examen 
+	
+	escribir "ingrese sus calificacion de trabajos" 
+	leer trabajos 
+	
+	escribir "ingrese sus calificacion de tareas"
+	leer tareas 
+	
+	examen= (examen * 30)/ 100
+	trabajo= (trabajos * 50)/ 100
+	tareas= (tareas * 20)/ 100
+	
+	promedio = examen + tareas + trabajos
+	
+	Mostrar "promedio final:"   promedio  
+	mostrar nombre " " edad "años"
+	mostrar  promedio > 6
+	mostrar "resultado de trabajo " trabajo *10 "%"
+	mostrar "resultado de examen "  examen *10 "%"
+	mostrar "resultado de tareas " tareas *10 "%"
+
+	
+	
+FinAlgoritmo
+
+//resultado del codigo
+*** Ejecución Iniciada. ***
+ingresar su nombre
+> mari
+edad
+> 15
+ingresa su calificacion de examen
+> 4
+ingrese sus calificacion de trabajos
+> 95
+ingrese sus calificacion de tareas
+> 10
+promedio final:98.2
+mari 15años
+VERDADERO
+resultado de trabajo 475%
+resultado de examen 12%
+resultado de tareas 20%
+*** Ejecución Finalizada. ***
