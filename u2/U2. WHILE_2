@@ -1,0 +1,110 @@
+algoritmo abarooteras
+	escribir "ingrese la contraseña: (formtado YYY-MMM-DD)"
+	leer contraseña 
+	escribir "que desea ingresar?" 
+	escribir "1. zanahorias" 
+	escribir "2.tomates" 
+	escribir "ingrese una opcion (1 o 2 ) : "
+	leer opcion 
+	     si opcion == 1 entonces 
+		escribir "ha seleccionado zanahorias" 
+		escribir "imgrese el numero de cajas" 
+		leer cajas 
+		costoTotal <- 0
+		pesoTotal <- 0 
+		
+		para i <- 1 hasta cajas con paso 1 Hacer
+			escribir "ingrese el peso en KG" , i , ":"
+			leer peso
+			costoTotal<-costoTotal+ (peso*15.84)
+			pesoTotal<-pesoTotal+peso
+		FinPara
+		
+	sino 
+		si opcion == 2 entonces 
+			escribir "a seleccionado tomates" 
+			costoTotal<- 0 
+			pesoTotal<-0
+			continuar <- verdadero
+			
+			mientras continuar hacer 
+				escribir "ingresa el peso (en kg) de la caja (o ingrese 10001 para terminar):"
+				leer peso 
+				si peso = 10001 entonces 
+					continuar <- falso 
+				sino 
+					costoTotal<- costoTotal+ (peso * 11.34)
+					pesoTotal<-pesoTotal+peso
+				FinSi
+				
+			FinMientras
+		sino 
+			escribir "opcion no valida, intente de nuevo"
+		finsi	
+	FinSi
+	
+	//deescuento 
+	si costoTotal > 10000 entonces 
+		descuento <- costoTotal * 0.075
+		costoTotal <- costoTotal - descuento
+		Escribir "Se ha aplicado un descuento del 7.5%: $", descuento
+	FinSi
+	
+	// Mostrar resumen de la venta
+	Escribir "Resumen de la venta:"
+	Si opcion = 1 Entonces
+		Escribir "Producto: Zanahorias"
+	Sino
+		Escribir "Producto: Tomates"
+	FinSi
+	Escribir "Cantidad de cajas: ", cajas
+	Escribir "Peso total: ", pesoTotal, " kg"
+	Escribir "Costo total antes de envío: $", costoTotal
+	
+	// Preguntar si requiere envío
+	Escribir "¿Requiere envío? (S/N):"
+	Leer requiereEnvio
+	
+	Si requiereEnvio = "S" O requiereEnvio = "s" Entonces
+		costoEnvio <- 150
+		costoTotal <- costoTotal + costoEnvio
+		Escribir "Se ha añadido un costo de envío de $150."
+	Sino
+		Escribir "No se ha añadido costo de envío."
+	FinSi
+	
+	Escribir "Costo total final: $", costoTotal
+	
+	
+FinAlgoritmo
+
+//resultado del codigo ejecutado
+** Ejecución Iniciada. ***
+ingrese la contraseña: (formtado YYY-MMM-DD)
+> 12-4-90
+que desea ingresar?
+1. zanahorias
+2.tomates
+ingrese una opcion (1 o 2 ) :
+> 1
+ha seleccionado zanahorias
+imgrese el numero de cajas
+> 4
+ingrese el peso en KG1:
+> 12
+ingrese el peso en KG2:
+> 23
+ingrese el peso en KG3:
+> 23
+ingrese el peso en KG4:
+> 45
+Resumen de la venta:
+Producto: Zanahorias
+Cantidad de cajas: 4
+Peso total: 103 kg
+Costo total antes de envío: $1631.52
+¿Requiere envío? (S/N):
+> S
+Se ha añadido un costo de envío de $150.
+Costo total final: $1781.52
+*** Ejecución Finalizada. ***
