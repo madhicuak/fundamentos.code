@@ -1,0 +1,26 @@
+Algoritmo numerologia 
+	escribir "ingresa un numero: "
+	leer p_n
+	escribir "segundo numero"
+	leer s_n
+	
+	si p_n > s_n entonces 
+		escribir "numero mayor " p_n  , " numero menor " s_n 
+		
+	sino 
+		escribir "numero mayor " s_n  , " numero menor " p_n 
+		
+	FinSi
+	
+	
+FinAlgoritmo
+
+//resultado del codigo
+
+** Ejecución Iniciada. ***
+ingresa un numero:
+> 2
+segundo numero
+> 3
+numero mayor 3 numero menor 2
+*** Ejecución Finalizada. ***
