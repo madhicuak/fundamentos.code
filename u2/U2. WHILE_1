@@ -1,0 +1,59 @@
+Proceso ACM
+	//contraseña
+	Escribir "Introduce la contraseña:"
+	Leer contraseña
+	
+	Mientras contraseña <> "Acm256" Hacer
+		Escribir "se llamara al supervisor:"
+		Leer contraseña
+	FinMientras
+	
+	Escribir "¡bienvenido!."
+	
+	
+	suma <- 0	
+	
+	//piezas fabricadas
+	escribir "-----piezas fabricadas--------"
+	Escribir "Ingresa las pieza (0000 para salir):"
+	Leer pieza
+	
+	Mientras pieza <> 0000 Hacer
+		suma <- suma + pieza
+		Escribir "Ingresa otro número (0000 para salir):"
+		Leer pieza
+		
+	FinMientras
+	
+	Escribir "La suma total es: ", suma
+	
+	//if
+	si  suma > 10000 entonces
+		escribir "se ha cumplido la meta" 
+	sino 
+		escribir "alerta para produccion"
+	FinSi
+	
+FinProceso
+
+//resultado del codigo ejectado 
+*** Ejecución Iniciada. ***
+Introduce la contraseña:
+> Acm256
+¡bienvenido!.
+-----piezas fabricadas--------
+Ingresa las pieza (0000 para salir):
+> 300
+Ingresa otro número (0000 para salir):
+> 900
+Ingresa otro número (0000 para salir):
+> 800
+Ingresa otro número (0000 para salir):
+> 90
+Ingresa otro número (0000 para salir):
+> 09
+Ingresa otro número (0000 para salir):
+> 0000
+La suma total es: 2099
+alerta para produccion
+*** Ejecución Finalizada. ***
