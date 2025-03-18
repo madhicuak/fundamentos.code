@@ -1,0 +1,93 @@
+Algoritmo for2
+	definir datos como entero 
+	
+	escribir "numero de vendedores: " 
+	leer n
+	venta_ma = 0
+	total_empresa =0
+	
+	
+	Para i <- 1 hasta n Hacer 
+		Escribir "numero de ventas del vendedor  " , i , " "
+		leer l
+		total_ventas <- 0 
+		Para g <- 1 hasta l hacer
+			escribir "valor de ventas : " , n , " " 
+			
+			si va_ventas > venta_ma entonces 
+				venta_ma <- va_ventas
+			sino 
+				
+			FinSi
+			
+			leer va_ventas 
+			total_ventas = total_ventas + va_ventas
+			
+			
+			
+			
+		FinPara
+		
+		si venta_ma < 100 o total_ventas < 1500 entonces 
+			escribir "ir a recursos humanos"
+		SiNo
+			escribir "alcanzo el exito de metas"
+			
+		FinSi 
+		
+		total_empresa <- total_empresa + total_ventas
+		
+	FinPara
+	
+
+	
+	si venta_ma < 100 o total_ventas < 1500 entonces 
+		escribir "pasar a recursos humanos"
+		
+	SiNo
+		escribir "sus ventas fueron exitosas"
+	FinSi 
+	
+	escribir "--------reporte del vendedor-------" 
+	
+	escribir n " vendedor registrado en el sistema " 
+	escribir " total de ventas globales de la empresa " total_empresa
+	si venta_ma > 20000 entonces 
+		escribir " alcanzo la meta " 
+	SiNo
+		escribir " se te convocara a una reunion " 
+		
+		FinSi
+	
+	
+	
+FinAlgoritmo
+
+//resultado del codigo 
+*** Ejecución Iniciada. ***
+numero de vendedores:
+> 2
+numero de ventas del vendedor  1
+> 2
+valor de ventas : 2
+> 2
+valor de ventas : 2
+> 2
+ir a recursos humanos
+numero de ventas del vendedor  2
+> 4
+valor de ventas : 2
+> 5
+valor de ventas : 2
+> 6
+valor de ventas : 2
+> 7
+valor de ventas : 2
+> 8
+ir a recursos humanos
+pasar a recursos humanos
+--------reporte del vendedor-------
+2 vendedor registrado en el sistema
+ total de ventas globales de la empresa 30
+ se te convocara a una reunion
+*** Ejecución Finalizada. ***
