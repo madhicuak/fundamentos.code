@@ -19,3 +19,16 @@ Algoritmo calcular_el_area
 	
 	
 FinAlgoritmo
+
+//resultado de este codigo
+*** Ejecución Iniciada. ***
+introducir el radio del circulo
+> 5
+introducir la hipotenusa del triangulo
+> 53.13
+19.635
+52.8942047865
+9.8175
+264.4710239327
+Area : 274.2885239327
+*** Ejecución Finalizada. ***
