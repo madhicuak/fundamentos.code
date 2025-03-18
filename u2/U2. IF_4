@@ -1,0 +1,78 @@
+Algoritmo rendimientovenderores
+	
+	
+	escribir"introducir primera venta del mes: " 
+	leer ventaP
+	
+	escribir"introducir segunda venta del mes:"
+	leer ventaS
+	
+	escribir "introducir venta tercera del mes:"
+	leer ventaT
+	
+	escribir "introducir venta cuarta del mes:"
+	leer ventaC
+	
+	si ventaP > ventaS y ventaP>ventaT y ventaP>ventaC entonces 
+		escribir "venta primera es mayor"
+		p1=ventaP
+	FinSi
+	
+	si ventaS >ventaP Y ventaS >ventaT y ventaS>ventaC entonces 
+		p1=ventaS
+		escribir "venta segunda es mayor"
+	FinSi
+	
+	si ventaT>ventaP Y ventaT>ventaS y ventaT>ventaC entonces 
+		p1=ventaT
+		escribir"venta tercera es mayor"
+		
+	FinSi
+	si ventaC>ventaP y ventaC>ventaT y ventaC>ventaS entonces 
+		p1=ventaC
+		escribir "venta cuarta es mayor"
+	finsi 
+	
+
+	//RESULTADO
+	Mostrar "El primero es ", ventaP, ", el segundo es ", ventaS, ", el tercero es ", ventaT ", el numero 4 es ", ventaC
+	
+	res1 <- rendimiento4 - rendimiento1
+	res2 <- rendimiento2 - rendimiento1
+	res3 <- rendimiento4 - rendimiento3
+	res4 <- rendimiento3 - rendimiento2
+	
+	Mostrar "El resultado del 4 menos el 1 es ", ventaP
+	Mostrar "El resultado del 2 menos el 1 es ", ventaS
+	Mostrar "El resultado del 4 menos el 3 es ", ventaT
+	Mostrar "El resultado del 3 menos el 2 es ", ventac
+	
+	
+	
+	
+	escribir "total de todas las ventas: " , ventaC+ventaS+ventaT+ventaC
+	escribir "promedio general " , (ventaC+ventaS+ventaT+ventaC)/4
+	
+	
+	
+	
+FinAlgoritmo
+
+//resultado del codigo ejecutado 
+*** Ejecución Iniciada. ***
+introducir primera venta del mes:
+> 12
+introducir segunda venta del mes:
+> 12
+introducir venta tercera del mes:
+> 12
+introducir venta cuarta del mes:
+> 12
+El primero es 12, el segundo es 12, el tercero es 12, el numero 4 es 12
+El resultado del 4 menos el 1 es 12
+El resultado del 2 menos el 1 es 12
+El resultado del 4 menos el 3 es 12
+El resultado del 3 menos el 2 es 12
+total de todas las ventas: 48
+promedio general 12
+*** Ejecución Finalizada. ***
