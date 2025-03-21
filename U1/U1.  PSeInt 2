@@ -1,3 +1,5 @@
+ este texto es un ejemplo #
+
 Algoritmo calcular_el_area
 	escribir"introducir el radio del circulo"
 	leer R
