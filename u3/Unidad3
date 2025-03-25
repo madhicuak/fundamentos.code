@@ -1,0 +1,77 @@
+/area y volumen del triangulo
+
+SubProceso CalcularEltriangulo()
+	definir volumen como entero 
+	definir area como entero 
+	
+	escribir "triangulo"
+	leer triangulo
+	escribir "el volumen es: " , volumen
+	escribir "el area es" ,area 
+	
+	areaBase<- (base - alturaTriangulo)/2 
+	volumen <-areaBase*alturaprisma
+	
+FinSubProceso
+
+//A y V del rectangulo
+SubProceso calcularELesfera()
+	definir volumen como entero 
+	definir area como entero 
+	
+	escribir "esfera"
+	leer esfera
+	escribir "el volumen es: " ,volumen 
+	escribir "el area es: " , area 
+	areaBase<- (base - alturaesfera)/2 
+	volumen <-areaBase*alturaprisma
+	
+	
+FinSubProceso
+
+
+//a y v del cuadrado
+SubProceso calcularelcilindro()
+	definir volumen como entero 
+	definir area como entero
+	
+	escribir "cilindro"
+	leer cilindro
+	escribir "el volumen es: " ,volumen 
+	escribir "el area es: " , area 
+	areaBase<- (base - alturacilindro)/2 
+	volumen <-areaBase*alturaprisma
+	
+	
+FinSubProceso
+
+
+//proceso 
+Algoritmo caculartresAREASyVolumen
+	Rtir="SI"
+	mientras Rtir="SI" hacer 	
+		escribir "ingrese un numero para calcular su area y volumen" 
+		escribir "ingresa 1 para triangulo" 
+		Escribir "ingresa 2 para rectangulo"
+		escribir "ingresa 3 para cuadrado"
+		leer figura
+		
+	Si figura =1 Entonces
+		CalcularEltriangulo()
+	SiNo
+		
+		si figura = 2 entonces 
+		calcularELcilindro()
+		sino 
+			
+			si figura = 3 entonces 
+				calcularelesfera()
+				
+			FinSi
+			
+		FinSi
+	Fin Si
+	
+	FinMientras
+	
+FinAlgoritmo
