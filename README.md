@@ -15,11 +15,8 @@ Universidad: Universidad Politecnica del Estado de Nayarit
 
 Descripción breve de la materia: en esta materia pude conocer los fundamentos basicos de programacion, lo que fue el   if, else, while. Fundamentos importantes a la hora de programar 
 
-unidad 1 
+unidad 1(https://github.com/madhicuak/fundamentos.code/tree/main/u3)
 
+unidad 2(https://github.com/madhicuak/fundamentos.code/tree/main/u2)
 
-unidad 2
-
-
-unidad 3 
-
+unidad 3(https://github.com/madhicuak/fundamentos.code/tree/main/u3)
